@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(255, 172, 127);
+    position: absolute;
+    inset : 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    /* height: 260px; */
+    background-color: antiquewhite;
+    position: relative;
+    padding-top: 1.5rem;
+    border-radius: 8px;
+    
+    
+    
+
+}
+
+.close {
+    position: absolute;
+    font-size: 24px;
+    color: silver;
+    top: -4px;
+    left: 2px;
+}
+.badge {
+    position: absolute;
+    top: -12px;
+    right:-12px;
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+
+}
+
+.card::before{ 
+    content: 'X';
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    font-size: 24px;
+    color: #ccc;
+}
+.card::after{
+    content: '25';
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    padding: 10px 14px;
+    background-color: red;
+    color: white;
+    border-radius: 50vh;
+}
+.card img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.card h4 {
+    text-align: center;
+    padding-block: 1.5rem;
+    border-top: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
